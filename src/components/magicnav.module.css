@@ -1,0 +1,43 @@
+.container {
+  padding: 50px;
+}
+.nav {
+  width: 500px;
+  height: 50px;
+  background-color: #000;
+  position: relative;
+}
+.indicator {
+  width: 50px;
+  height: 50px;
+  background-color: #00ff00;
+  position: absolute;
+  top: calc(-50% - 7px);
+  left: 30px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.indicator::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #0000;
+  position: absolute;
+  top: 27px;
+  left: -13px;
+  border-radius: 0 10px 0 0;
+  box-shadow: 1px -1px 0 1px #fff;
+}
+.indicator::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #0000;
+  position: absolute;
+  top: 27px;
+  right: -13px;
+  border-radius: 10px 0 0 0;
+  box-shadow: -1px -1px 0 1px #fff;
+}

@@ -1,0 +1,39 @@
+.nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  width: 200px;
+}
+.nav ul li {
+  height: 40px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.nav ul li:hover {
+  transform: rotateY(-90deg);
+}
+.nav li a,
+.nav li a::after {
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+.nav li a::after {
+  content: attr(data-text);
+  color: #ffffff;
+  background-color: #000000;
+  transform: rotateY(-90deg) translateX(-100px) translateZ(100px);
+}
+.nav li a {
+  color: #000000;
+  background-color: #f1f1f1;
+  transform: rotateY(90deg) translateZ(100px);
+}

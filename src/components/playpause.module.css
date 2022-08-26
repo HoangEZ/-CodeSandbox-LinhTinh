@@ -1,0 +1,46 @@
+.container {
+  padding: 10px;
+}
+.playpause {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.buttonLeft,
+.buttonRight {
+  position: absolute;
+  top: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.buttonLeft {
+  border-width: 0 0 0 5px;
+  height: 20px;
+  width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #000;
+  left: 0;
+}
+
+.playpause:hover .buttonLeft {
+  border-width: 5px 0 5px 5px;
+  width: 5px;
+  height: 10px;
+}
+
+.buttonRight {
+  border-width: 0 0 0 5px;
+  height: 20px;
+  width: 0px;
+  border-style: solid;
+  border-color: transparent transparent transparent #000000;
+  right: 5px;
+}
+.playpause:hover .buttonRight {
+  border-width: 5px 0 5px 5px;
+  height: 0;
+  width: 0;
+  top: 5px;
+  right: 10px;
+}
